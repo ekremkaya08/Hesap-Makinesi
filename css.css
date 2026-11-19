@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sayfa Arka Planı (Modern Koyu Mavi Geçiş) */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
+}
+.table {
+	width: 100px;
+	height: 30p;
+}
+.table.td{
+	width: 100px;
+	height: 300px;
+}
+.calculator {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
+    width: 320px;
+}
+#display {
+    width: 100%;
+    height: 70px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 16px;
+    color: #38bdf8; /* Canlı Açık Mavi Rakamlar */
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: right;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.button-row {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+button-row: last-child {
+	margin-bottom:0;
+}
+button {
+	flex: 1;
+	height: 55px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.1);
+	color: #f8fafc;
+	font-size: 1.25rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+button:hover{
+	background: rgba(255, 255, 255, 0.25);
+	transform: translateY(-1px);
+}
+button-active{
+	transform: translateY(1px),
+}
+button: last-child{
+	background: linear-gradient(135deg, #0284c7, #0369a1);
+	border: none;
+	font-weinght: bold;
+}
+button:last-child:hover{
+	background: linear-gradient(135deg, #38bdf8, #0284c7);
+}
